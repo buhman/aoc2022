@@ -3,6 +3,7 @@ INPUT += input/day2
 INPUT += input/day3
 INPUT += input/day4
 INPUT += input/day5
+INPUT += input/day6
 
 all: $(INPUT)
 
