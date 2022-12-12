@@ -1,0 +1,4 @@
+cookie
+*.o
+*.hi
+prompt/
