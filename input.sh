@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -eu
+
 cookie="$(cat cookie)"
 year=2022
 day=$1

@@ -1,11 +1,7 @@
-INPUT += input/day1
-INPUT += input/day2
-INPUT += input/day3
-INPUT += input/day4
-INPUT += input/day5
-INPUT += input/day6
+INPUT = $(addprefix input/day, $(shell seq 1 18))
+PROMPT = $(addsuffix .html, $(addprefix prompt/day, $(shell seq 1 18)))
 
-all: $(INPUT)
+all: $(INPUT) #$(PROMPT)
 
 input/day%: input.sh
 	@mkdir -p $(dir $@)
